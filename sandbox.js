@@ -94,8 +94,37 @@
 
 //           LOOPS          //
 
-for(let i = 0; i <5; i ++){
+// for(let i = 0; i <5; i ++){
+//     console.log('in loop:',i);
+// }
 
+// console.log('loop finished.')
 
-    
+//        CONDITIONAL STATEMENTS //
+
+// const ninjas = ['shaun','henry', 'li', 'yoshi'];
+
+// if (ninjas.length > 3) {
+
+//     console.log("4 ninjas completed");
+//     console.log(ninjas);
+// } 
+
+//          BREAK AND CONTINUE      //
+
+const scores = [50, 25, 0, 30, 100, 20, 10];
+
+for(let i = 0; i < scores.length; i++) { //looping through the list
+
+if(scores[i] === 0){        // continue loop if the list hits 0
+    continue;
+}
+
+console.log('your score: ', scores [i]);
+
+if(scores[i] === 100) {
+    console.log('congrats, you got the top score');
+    break;                  // stop loop if the list hits 100 
+}
+
 }
