@@ -112,19 +112,69 @@
 
 //          BREAK AND CONTINUE      //
 
-const scores = [50, 25, 0, 30, 100, 20, 10];
+// const scores = [50, 25, 0, 30, 100, 20, 10];
 
-for(let i = 0; i < scores.length; i++) { //looping through the list
+// for(let i = 0; i < scores.length; i++) { //looping through the list
 
-if(scores[i] === 0){        // continue loop if the list hits 0
-    continue;
-}
+// if(scores[i] === 0){        // continue loop if the list hits 0
+//     continue;
+// }
 
-console.log('your score: ', scores [i]);
+// console.log('your score: ', scores [i]);
 
-if(scores[i] === 100) {
-    console.log('congrats, you got the top score');
-    break;                  // stop loop if the list hits 100 
-}
+// if(scores[i] === 100) {
+//     console.log('congrats, you got the top score');
+//     break;                  // stop loop if the list hits 100 
+// }
 
-}
+// }
+
+
+// SWITCH STATEMENTS //
+
+// const grade = 'A';
+
+// switch(grade){
+//     case 'A':
+//         console.log('you got an A');
+//         break;
+//     case 'B':
+//         console.log('you got an B');
+//         break;
+//     case 'C':
+//         console.log('you got an C');
+//         break;
+//     case 'D':
+//         console.log('you got an D');
+//         break;
+//     default:
+//         console.log('not a valid grade');
+// }
+
+// SCOPE //
+// //const would work too, global scope
+// let age = 30;
+
+// if (true){
+//     let age = 40;
+//     console.log('inside 1st code block', age);
+// }
+
+// console.log('outside code block', age);
+
+//          FUNCTIONS        //
+
+function greet(){
+    console.log('hello there!');
+} //no semi-colon because fucntion
+
+greet();
+greet();
+
+const speak = function(){
+    console.log('good day');
+}; // semi-colon because variable, no necesary, just good practice
+
+speak();
+
+
