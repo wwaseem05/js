@@ -162,19 +162,68 @@
 
 // console.log('outside code block', age);
 
-//          FUNCTIONS        //
+// //          FUNCTIONS        //
 
-function greet(){
-    console.log('hello there!');
-} //no semi-colon because fucntion
+// function greet(){
+//     console.log('hello there!');
+// } //no semi-colon because fucntion
 
-greet();
-greet();
+// greet();
+// greet();
 
-const speak = function(){
-    console.log('good day');
-}; // semi-colon because variable, no necesary, just good practice
+// // fucntions expression, so much better way to define functions 
+// const speak = function(){
+//     console.log('good day');
+// }; // semi-colon because variable, no necessary, just good practice
 
-speak();
+// speak();
+
+//      PARAMETERS      //
+
+// const speak = function(name = 'Henry', time = 'night'){
+//     console.log(`good ${time}, ${name}`) // remember these are templates
+// }
+// speak();
+
+// const calcArea = function(radius){
+// return 3.14 * radius **2;
+// };
+
+// const area = calcArea(5);
+// console.log(area);
+
+//      ARROW FUCNTIONS         //
+
+// const greet = () => 'hello, world';
+// const result = greet();
+// console.log(result);
 
 
+// FUNCTIONS vs METHODS //
+
+// // fucntions
+// const name = 'Shaun';
+// const greet = () => 'hello';
+
+// let resultOne = greet();
+// console.log(resultOne);
+
+// // methods
+
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
+
+// CAKKBACKS & FOREACH //
+
+// const myFunc = (callbackFunc) => {
+//     //do smth
+//     let value = 50;
+//     callbackFunc(value);
+// };
+
+// myFunc(function(value){ console.log(value); });
+// //myFunc is a higher-order function, meaning it's a function that takes another function as an argument.
+
+let people = ['stella', 'mario', 'jason'];
+
+people.forEach(function(){ console.log('something');});
