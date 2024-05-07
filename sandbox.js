@@ -224,6 +224,29 @@
 // myFunc(function(value){ console.log(value); });
 // //myFunc is a higher-order function, meaning it's a function that takes another function as an argument.
 
-let people = ['stella', 'mario', 'jason'];
+//let people = ['stella', 'mario', 'jason'];
 
-people.forEach(function(){ console.log('something');});
+// people.forEach(function(){ console.log('something');});
+
+// people.forEach(function(person){ console.log(person);});
+
+//people.forEach((person, index) => {console.log(index,person);});
+
+// const logPerson = (person, index) => {
+//     console.log(`${index} - hello ${person}`);
+// }
+// people.forEach(logPerson);
+
+
+// get a reference to the 'ul'
+// const ul = document.querySelector('.people');
+
+// const people = ['mario', 'luigi','ryu', 'shaun', 'chun-li'];
+// let html =``;
+
+// people.forEach(function(person){
+// // create html template
+// html += `‹li style="color: purple">${person}</li›`;
+// });
+// console.log(html);
+// ul.innerHTML = html;
